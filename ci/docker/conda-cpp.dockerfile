@@ -42,7 +42,7 @@ COPY ci/conda_env_cpp.yml \
      ci/conda_env_gandiva.yml \
      ci/conda_env_unix.yml \
      /arrow/ci/
-RUN conda create -n arrow -q \
+RUN conda create -n arrow -q -y \
         --file arrow/ci/conda_env_unix.yml \
         --file arrow/ci/conda_env_cpp.yml \
         --file arrow/ci/conda_env_gandiva.yml \
